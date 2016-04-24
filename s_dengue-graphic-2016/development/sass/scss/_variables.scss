@@ -1,0 +1,66 @@
+$font-primary: Georgia, serif;
+$font-Merriweather: 'Merriweather', serif;
+$font-Playfair: 'Playfair Display', serif;
+$font-Roboto: 'Roboto', sans-serif;
+
+$font-SelaneMinTen:'Selane MinTen', serif;
+$font-Thirty:'Selane Thirty', serif;
+
+$font-SelaneTen:'Selane Ten', serif;
+
+
+$font-Curator-Regular:'Curator Regular', sans-serif;
+$font-Curator-Bold:'Curator Bold', sans-serif;
+
+$default-border-radius : 10px;
+
+$d_small:420px;
+$d_medium:768px;
+$d_normal:992px;
+$d_large:1200px;
+
+$color_chapter:#0C2B57;
+
+$padding_left_parraf:67px;
+$padding_right_parraf:85px;
+$st-color-blue:#0c2b57;
+
+
+$images_dir:"../images/";
+
+$susy: (container:$d_large, columns: 16, gutter:5px, output:isolate );
+
+
+
+
+
+
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #91b0c3
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+
+
+
+
+

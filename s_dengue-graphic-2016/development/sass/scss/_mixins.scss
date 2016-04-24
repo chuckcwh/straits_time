@@ -1,0 +1,29 @@
+@mixin background($file_name,$position:0 0,$repeat: repeat){
+	background: {
+		image:url(#{$images_dir}#{$file_name});
+		position: $position;
+		repeat: $repeat;
+	}
+
+}
+
+@mixin center_div_vertical{
+	position: absolute;
+	top:50%;
+	@include translateY(-50%);
+}
+
+@mixin center_div {
+	margin: 0 auto;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
