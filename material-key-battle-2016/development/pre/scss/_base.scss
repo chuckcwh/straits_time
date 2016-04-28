@@ -1,0 +1,72 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-Curator-Regular;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B3B3;
+    @media (min-width: $d_medium) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+h1 {
+    font-family: $font-SelaneMinTen;
+    font-size: 2.5rem;
+    line-height: 100%;
+    @include breakpoint($d_medium){
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin: 0px 0 0 0;
+    color: $screen  ;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 60%;
+    color: $screen;
+}
+
+a {
+    text-decoration: none;
+    color: #5a9ddc;
+    &:hover {
+        color: #467aa5;
+    }
+}
+
+p {
+    margin-bottom: 1.125em;
+}
+
+strong {
+    font-family: $font-Curator-Bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    margin-bottom: 1.125em;
+}
+label{
+    color:#333;
+}
+
+svg {
+    font-family: $font-Curator-Regular !important;
+
+}

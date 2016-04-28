@@ -1,0 +1,18 @@
+@import "materialize/components/color";
+@import "materialize/components/variables";
+
+.z-depth-1{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.z-depth-1-half{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+// @import "materialize/components/mixins";
+// @import "materialize/components/prefixer";
+// @import "materialize/components/global";
+// @import "materialize/components/form";
+
+@import "materialize/components/buttons";
+

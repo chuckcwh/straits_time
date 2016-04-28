@@ -1,0 +1,66 @@
+id,txt-(leave-blank-if-nothing),forSubs
+team1,Everton,Team 1
+team2,Arsenal,Team 2
+pub-date,"Mar 19, 2016",Date graphic will be published
+keybattle1-name1,Romelu Lukaku,1st Battle - Player 1's name
+keybattle1-name2,Laurent Koscielny,1st Battle - Player 2's name
+keybattle1-txt,"Koscielny’s comeback this week is welcomes news for Arsenal, as both Gabriel Paulista and Per Mertesacker have struggled of late. He faces the in-form Lukaku, who has scored five goals in his last four games and whose slaloming solo run led to a magnificent opener against Chelsea. The Belgian’s ability to let fly with either foot makes him lethal.",1st Battle text
+keybattle1-img1,battle1-player1-190316.png,Img for player 1
+keybattle1-img2,battle1-player2-190316.png,Img for player 2
+keybattle1-field-img,field1.png,Select from a list of possible field positions in a tab below
+keybattle2-name1,Ross Barkley,2nd Battle - Player 1's name
+keybattle2-name2,Francis Coquelin,2nd Battle - Player 2's name
+keybattle2-txt,"Coquelin lost his cool in his last league game, the 2-2 draw against Tottenham, and was sent off for a rash tackle. He has to be calmer as the senior member of an inexperienced partnership with Mohamed Elneny. He also has to subdue Everton’s No. 10, Barkley, who has 12 goals and 10 assists in a productive season. He has come of age.",2nd Battle text
+keybattle2-img1,battle2-player1-190316.png,Img for player 1
+keybattle2-img2,battle2-player2-190316.png,Img for player 2
+keybattle2-field-img,field2.png,Select from a list of possible field positions in a tab below
+keybattle3-name1,Muhamed Besic,3rd Battle - Player 1's name
+keybattle3-name2,Mesut Oezil,3rd Battle - Player 2's name
+keybattle3-txt,"Bosnian midfielder Besic came to prominence by marking Lionel Messi in the last World Cup. Now, as he stands in for the banned Gareth Barry, his mission will be to keep Oezil quiet. The German has 18 Premier League assists this season, only two away from Thierry Henry’s record but just two of them have come in 2016.",3rd Battle text
+keybattle3-img1,battle3-player1-190316.png,Img for player 1
+keybattle3-img2,battle3-player2-190316.png,Img for player 2
+keybattle3-field-img,field9.png,Select from a list of possible field positions in a tab below
+stats-header1,Prolific hitmen,Put the first heading under statisics here
+stats-header1-img1,stats1-190316.png,Input first image under this heading
+stats-header1-txt1,Goals Olivier Giroud has scored in his last five games against Everton.,Input text for the first image
+stats-header1-img2,stats2-190316.png,Input second image
+stats-header1-txt2,"Goals this season by Romelu Lukaku, the most by an Everton player since Gary Lineker got 40 in 1985-86.",Input text for the second image
+stats-header1-img3,,Input third image
+stats-header1-txt3,,Input text for the third image
+stats-header2,Leaky home,Put the second heading under statisics here
+stats-header2-img1,stats3-190316.png,Upload first image under this heading with this format
+stats-header2-txt1,Home league goals Everton have conceded. Only France’s Troyes (29) have let in more in any of Europe’s top five leagues.,Input text for the first image
+stats-header2-img2,stats4-190316.png,Input second image
+stats-header2-txt2,"Defeats in Everton’s last seven home league games, taking only four points from a possible 21.",Input text for the second image
+stats-header2-img3,,Input third image
+stats-header2-txt3,,Input text for the third image
+stats-header3,Struggling for form,Put the third heading under statisics here
+stats-header3-img1,stats5-190316.png,Input first image under this heading
+stats-header3-txt1,"Losses in Arsenal’s last seven, with 14 goals conceded.",Input text for the first image
+stats-header3-img2,,Input second image
+stats-header3-txt2,,Input text for the second image
+stats-header3-img3,,Input third image
+stats-header3-txt3,,Input text for the third image
+stats-header4,Bogey team,Put the fourth heading under statisics here
+stats-header4-img1,stats6-190316.png,Upload first image under this heading with this format
+stats-header4-txt1,"Win in Everton’s last 18 games against Arsenal, with 11 defeats in that stretch.",Input text for the first image
+stats-header4-img2,,Upload second image under this heading with this format
+stats-header4-txt2,,Input text for the second image
+stats-header4-img3,,Upload third image under this heading with this format
+stats-header4-txt3,,Input text for the third image
+stats-header5,Struggling for form,Put the fifth heading under statisics here
+stats-header5-img1,stats5-190316.png,Input first image under this heading
+stats-header5-txt1,"Losses in Arsenal’s last seven, with 14 goals conceded.",Input text for the first image
+stats-header5-img2,,Input second image
+stats-header5-txt2,,Input text for the second image
+stats-header5-img3,,Input third image
+stats-header5-txt3,,Input text for the third image
+stats-header6,,Put the sixth heading under statisics here
+stats-header6-img1,,Upload first image under this heading with this format
+stats-header6-txt1,,Input text for the first image
+stats-header6-img2,,Upload second image under this heading with this format
+stats-header6-txt2,,Input text for the second image
+stats-header6-img3,,Upload third image under this heading with this format
+stats-header6-txt3,,Input text for the third image
+credit-text,Richard Jolly,Name of writer (make sure it's uppercase)
+credit-photo,Reuters,"Photo source, can include more than one with a comma (make sure it's uppercase)"

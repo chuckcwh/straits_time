@@ -1,0 +1,97 @@
+
+/* SEARCH */
+.leaflet-control.leaflet-control-search {
+	z-index:2000;
+}
+.leaflet-control-search .search-input {
+	display:block;
+	float:left;
+	background: #fff;
+	border:none;
+	border-radius:0;
+	height:24px;
+
+
+	margin:3px;
+	padding-right:30px;
+	outline: none;
+
+
+	/*width: 85%;*/
+    max-width: 200px !important;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+    padding: 5px 30px 5px 15px;
+    position: relative;
+
+}
+.leaflet-control-search .search-button:hover,
+.leaflet-control-search .search-button {
+	background-image: url('../images/search-icon-mobile.png');
+	-webkit-border-radius: 0px;
+	        border-radius: 0px;
+	background-position: 1px 1px;	
+	width:32px;
+	height:32px;
+	background-size: 100%;
+	margin: 3px;
+	box-sizing:border-box;
+	font-family: 'Curator Regular', sans-serif;
+}
+.leaflet-control-search.search-load .search-input {
+	background: url('../images/loader.gif') no-repeat center right #fff;
+}
+.leaflet-control-search .search-cancel {
+	background-image: url('../images/search-icon-mobile.png');
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	background-position: -3px -61px;
+	width:32px;
+	height:32px;
+	right:30px;
+	background-size: 100%;
+	margin: 3px;
+	box-sizing:border-box;
+}
+.leaflet-control-search .search-tooltip {
+	max-height:142px;/*(.search-tip height * 5)*/
+	background-color:#fff;
+	width: 89%;
+}
+.leaflet-control-search .search-tip {
+	font-size:1.2em;
+	margin:0px;
+	padding:3px 2px 3px 10px;
+	display:block;
+	color:black;
+	background: rgba(255,255,255,0.8);
+	border-radius:0;
+	text-decoration:none;	
+	white-space:nowrap;
+	vertical-align:center;
+	font-family: 'Curator Regular', sans-serif;
+
+}
+.leaflet-control-search .search-tip .climbo-icon-mini {
+	float:right;
+	display:block;
+	white-space:nowrap;	
+}
+.leaflet-control-search .search-button:hover{
+	background-color: #5F9DD5;
+}
+
+.leaflet-control-search .search-tip-select,
+.leaflet-control-search .search-tip:hover {
+		background-color: #EAEAEA;
+}
+.leaflet-control-search .search-alert {
+	font-size:1.2em;
+} 
+
+#map-dengue {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+ }

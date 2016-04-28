@@ -1,0 +1,178 @@
+$black1: #333333;
+
+
+@mixin content-key-general-style {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+@mixin content-key-h4-style {
+    font-size: 18px;
+    font-family: $font-Curator-Bold;
+    color: $black1;
+}
+
+
+.content-key-battles {
+    >div {
+        @include content-key-general-style;
+        h4 {
+            @include content-key-h4-style;
+        }
+        .battle-division {
+            min-height: 20px;
+            margin: 12px 0 20px;
+            background-color: $screen;
+            .head {
+                height: 84px;
+                padding: 30px;
+                position: relative;
+                >div {
+                    display: inline-block;
+                    line-height: 84px;
+                    &:nth-of-type(3) {
+                        float: right;
+                    }
+                    .head-icon, .head-icon-name {
+                        display: inline-block;
+                    }
+                    .head-icon {
+                        background-color: pink;
+                        @include border-radius(50%);
+                        width: 84px;
+                        height: 84px;
+                        vertical-align: top;
+                    }
+                    .head-icon-name, &.head-versus {
+                        font-size: 17px;
+                        color: $black1;
+                        font-family: $font-Curator-Bold;
+                        vertical-align: middle;
+                        line-height: normal;
+                        margin: 0 20px;
+                        font-weight: bold;
+                        width: 80px;
+                    }
+                    &.head-versus {
+                        position: absolute;
+                        margin: 0 auto;
+                        top: 63px;
+                        left: 0;
+                        right: 0;
+                        width: 0;
+                    }
+                    .-right {
+                        float: right;
+                    }
+                }
+            }
+            .body {
+                padding: 10px 30px 30px;
+                .map {
+                    width: 218px;
+                    height: 168px;
+                    float: left;
+
+                }
+                .des{
+                    font-family: $font-Curator-Regular;
+                    font-size: 15px;
+                    min-height: 168px;
+                    line-height: 24px;
+                    color: $black1;
+                    margin-left: 238px;
+                }
+            }
+        }
+    }
+}
+
+
+.content-key-statistics {
+    >div {
+        @include content-key-general-style;
+        margin-top: 30px;
+        h4 {
+            @include content-key-h4-style;
+        }
+        .battle-statistics {
+            min-height: 20px;
+            >p {
+                font-family: $font-Curator-Bold;
+                font-size: 15px;
+                color: #333333;
+                margin: 25px 0 0;
+            }
+            .statistics-match .match-each {
+                .logo {
+                    width: 58%;
+                    float: left;
+                }
+                .des {
+                    margin-left: 58%;
+                    font-family: $font-Curator-Regular;
+                    font-size: 15px;
+                    line-height: 24px;
+                    min-height: 251.3px;
+                    color: $black1;
+                    display: table;
+                    p {
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.content-note {
+    >div {
+        clear: both;
+        @include content-key-general-style;
+        text-align: center;
+        margin: 43px auto 80px;
+        .see-prev-btn {
+            background: $screen;
+            padding: 18px;
+            font-family: $font-Curator-Regular;
+            font-size: 15px;
+            line-height: 24px;
+            color: #333333;
+            &:hover {
+                transition: background-color .5s;
+                background: #CFDBDE;
+            }
+        }
+        .content-note-hr {
+            margin: 58px 0 15px;
+            height: 1px;
+            border: 0;
+            border-bottom: 1px dotted #999999;
+        }
+        >p {
+            font-family: $font-Curator-Regular;
+            font-size: 13px;
+            line-height: 21px;
+            color: #333333;
+            margin-bottom: 0;
+            text-align: left;
+            >strong {
+                font-family: $font-Curator-Bold;
+            }
+        }
+    }
+}
+
+section.content-fb-comments {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .st-content-menu .st-content-menu-fixed .navbar .st-social-desktop {
+        display: block;
+    }
+}
