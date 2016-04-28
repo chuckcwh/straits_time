@@ -20,7 +20,8 @@ $(document).ready(function(){
     function createDataSets(data) {
         for (i=1; i<data.length; i++) {
             var checkImg = data[i][0].indexOf("img");
-            if (checkImg > 0) {
+            var ifEmpty = $.trim(data[i][1]);
+            if (checkImg > 0 && ifEmpty != "") {
                 $(".csv-" + data[i][0]).attr("src", imageUrl + data[i][1]);
             } else {
                 $(".csv-" + data[i][0]).html(data[i][1]);
@@ -38,11 +39,11 @@ $(document).ready(function(){
             }
         });
 
-//        $(".csv-lookup2").each(function() {
-//            var ifEmpty = $(this).find(".csv-checkIfEmpty2").html().trim();
-//            if (ifEmpty == "") {
-//                $(this).hide();
-//            }
-//        });
+        $(".csv-lookup2").each(function() {
+            var ifEmpty = $(this).find(".csv-checkIfEmpty2").html().trim();
+            if (ifEmpty == "") {
+                $(this).hide();
+            }
+        });
     }
 });
