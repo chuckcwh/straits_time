@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var csvUrl = "battle_data/content.csv";
+    var csvUrl = "battle_csv/content.csv";
     var imageUrl = "images/battle-image/";
 
 
@@ -12,7 +12,6 @@ $(document).ready(function(){
         success: function (csvd) {
             data = $.csv.toArrays(csvd);
             createDataSets(data);
-            console.log(data);
         },
     })
 

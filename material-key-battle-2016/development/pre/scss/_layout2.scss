@@ -13,6 +13,26 @@ $black1: #333333;
     color: $black1;
 }
 
+.st-header-page {
+    .st-header-title {
+        padding-top: 68px;
+        h1 {
+            font-size: 4em;
+        }
+    }
+    .st-header-strap {
+        padding-top: 6px;
+        font-size: 1em;
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    }
+    .time {
+        padding-top: 10px;
+        margin-bottom: 55px;
+    }
+}
 
 .content-key-battles {
     >div {
@@ -70,10 +90,11 @@ $black1: #333333;
             .body {
                 padding: 10px 30px 30px;
                 .map {
+                    float: left;
+                    .map-img {
                     width: 218px;
                     height: 168px;
-                    float: left;
-
+                    }
                 }
                 .des{
                     font-family: $font-Curator-Regular;
@@ -106,8 +127,13 @@ $black1: #333333;
             }
             .statistics-match .match-each {
                 .logo {
-                    width: 58%;
                     float: left;
+                    width: 58%;
+                    display: table;
+                    .logo-img {
+                        width: 100%;
+                        display: table-cell;
+                    }
                 }
                 .des {
                     margin-left: 58%;
@@ -122,6 +148,9 @@ $black1: #333333;
                         vertical-align: middle;
                     }
                 }
+            }
+            .hr-mobile {
+                display: none;
             }
         }
 
@@ -146,7 +175,7 @@ $black1: #333333;
                 background: #CFDBDE;
             }
         }
-        .content-note-hr {
+        .hr-desktop {
             margin: 58px 0 15px;
             height: 1px;
             border: 0;
@@ -171,8 +200,145 @@ section.content-fb-comments {
     padding-bottom: 50px;
 }
 
-@media (max-width: 767px) {
+
+@media(max-width: 767px) {
     .st-content-menu .st-content-menu-fixed .navbar .st-social-desktop {
         display: block;
+    }
+    .st-social-desktop .st-image-responsive {
+        display: inline-block;
+        float: right;
+    }
+    .st-header-page {
+        .st-header-title {
+            padding-top: 35px;
+            padding-bottom: 10px;
+            h1 {
+                font-size: 2.8em;
+            }
+        }
+        .st-header-strap {
+            padding-bottom: 10px;
+            p {
+                font-size: 1.1em;
+                line-height: 1.6;
+            }
+        }
+    }
+
+
+    .content-key-battles {
+        >div {
+            h4 {
+                margin-left: 8px;
+            }
+            .battle-division {
+                .head {
+                    position: relative;
+                    padding: 20px 8px 35px;
+                    >div {
+                        .head-icon, .head-icon-name {
+                            display: block;
+                            text-align: center;
+                        }
+                        .head-icon-name {
+                            margin: 15px auto 35px;
+                            font-size: 15px;
+                        }
+                        &:nth-of-type(3) {
+                            .head-icon {
+                                position: absolute;
+                                top: 20px;
+                                right: 8px;
+                            }
+                            .head-icon-name {
+                                margin-top: 99px;
+                            }
+                        }
+                    }
+                }
+                .body {
+                    clear: both;
+                    padding: 0 0 50px;
+                    text-align: center;
+                    .map, .des {
+                        display: block;
+                    }
+                    .map {
+                        margin-left: 50px;
+                        margin-right: 50px;
+                        float: none;
+                        .map-img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .des {
+                        margin: 18px 8px 0;
+                        clear: both;
+                        text-align: left;
+                        min-height: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .content-key-statistics {
+        >div {
+            margin-top: 50px;
+            h4 {
+                margin: 0 8px;
+                padding-bottom: 10px;
+            }
+            .battle-statistics {
+                >p {
+                    margin: 20px 8px 10px;
+                }
+                .statistics-match .match-each {
+                    .logo, .des {
+                        display: block;
+                        clear: both;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                    }
+                    .logo {
+                        width: auto;
+                    }
+                    .des {
+                        min-height: auto;
+                        margin-bottom: 20px;
+                    }
+                }
+                .hr-mobile {
+                    display: block;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    border-bottom: 1px dotted #999999;
+                    height: 1px;
+                }
+            }
+        }
+    }
+    .content-note {
+        >div {
+        margin-top: 78px;
+        margin-bottom: 60px;
+            .for-desktop {
+                display: none;
+            }
+            .hr-desktop {
+                display: none;
+            }
+            p {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+            p:first-of-type {
+                margin-top: 78px;
+            }
+        }
+    }
+    section.content-fb-comments {
+        padding-bottom: 30px;
     }
 }
