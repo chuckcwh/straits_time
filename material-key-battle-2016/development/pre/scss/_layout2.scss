@@ -19,6 +19,13 @@ $black1: #333333;
         h1 {
             font-size: 4em;
         }
+        .headline-appear {
+            opacity: 0;
+            transition: all .5s;
+            &.appear {
+                opacity: 1;
+            }
+        }
     }
     .st-header-strap {
         padding-top: 6px;
