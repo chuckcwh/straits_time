@@ -45,4 +45,19 @@ $(document).ready(function(){
             }
         });
     }
+
+//    toggle key battles slideup/slidedown
+    $('.accordion-arrow').on('click', function(e) {
+        e.preventDefault();
+        var section = $(this).parent();
+        if (!section.hasClass('clicked') && ($('.battle-division').hasClass('clicked'))) {
+            $('.battle-division').removeClass('clicked');
+            section.addClass('clicked');
+        } else {
+            section.toggleClass('clicked');
+        }
+    });
+
+
+
 });

@@ -232,16 +232,18 @@ section.content-fb-comments {
                 margin-left: 8px;
             }
             .battle-division {
+                position: relative;
                 .head {
                     position: relative;
-                    padding: 20px 8px 35px;
+                    padding: 20px 8px;
+                    height: 100%;
                     >div {
                         .head-icon, .head-icon-name {
                             display: block;
                             text-align: center;
                         }
                         .head-icon-name {
-                            margin: 15px auto 35px;
+                            margin: 15px auto 0;
                             font-size: 15px;
                         }
                         &:nth-of-type(3) {
@@ -258,8 +260,11 @@ section.content-fb-comments {
                 }
                 .body {
                     clear: both;
-                    padding: 0 0 50px;
+                    padding: 0;
                     text-align: center;
+                    max-height: 0;
+                    transition: all .5s ease-out;
+                    overflow: hidden;
                     .map, .des {
                         display: block;
                     }
@@ -277,6 +282,29 @@ section.content-fb-comments {
                         clear: both;
                         text-align: left;
                         min-height: inherit;
+                    }
+                }
+                .accordion-arrow {
+                    position: absolute;
+                    bottom: 9px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    background: image-url('arrow-accordion-down-23x23px.svg') no-repeat;
+                    background-size: cover;
+                    background-position: 50%;
+                    width: 23px;
+                    height: 23px;
+                }
+                &.clicked {
+                    .accordion-arrow {
+                        background: image-url('arrow-accordion-up-23x23px.svg') no-repeat;
+                    }
+                    .body {
+                        max-height: 700px;
+                        padding: 0 0 50px;
+                        transition: all .5s ease-in;
                     }
                 }
             }
