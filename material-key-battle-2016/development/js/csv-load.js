@@ -21,11 +21,13 @@ $(document).ready(function(){
             var checkImg = data[i][0].indexOf("img");
             var ifEmpty = $.trim(data[i][1]);
             if (checkImg > 0 && ifEmpty != "") {
-                $(".csv-" + data[i][0]).attr("src", imageUrl + data[i][1]);
+                $(".csv-" + data[i][0]).attr("data-original", imageUrl + data[i][1]);
             } else {
                 $(".csv-" + data[i][0]).html(data[i][1]);
             }
         }
+        $('.headline-appear').addClass('appear');
+
         removeCardIfEmpty();
     };
 
@@ -45,4 +47,23 @@ $(document).ready(function(){
             }
         });
     }
+
+//    toggle key battles slideup/slidedown
+    $('.accordion-arrow').on('click', function(e) {
+        e.preventDefault();
+        var section = $(this).parent();
+        if (!section.hasClass('clicked') && ($('.battle-division').hasClass('clicked'))) {
+            $('.battle-division').removeClass('clicked');
+            section.addClass('clicked');
+        } else {
+            section.toggleClass('clicked');
+        }
+    });
+
+
+//    lazyload image with fadein effect
+    $('img.lazy').lazyload({
+        effect: "fadeIn"
+    })
+
 });
